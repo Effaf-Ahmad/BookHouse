@@ -1,7 +1,7 @@
-﻿@page
+@page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Signup";
     Layout = "~/Areas/Identity/Pages/_BookHouseLayout.cshtml";
 }
 
@@ -42,7 +42,7 @@
         <label asp-for="Input.ConfirmPassword"></label>
         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
     </div>
-    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+    <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary" style="background-color: black; color: white;border:black">Sign up</button>
 </form>
 
 @section Scripts {
