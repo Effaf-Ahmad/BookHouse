@@ -1,4 +1,5 @@
 ﻿using BookHouse.Areas.Identity.Data;
+using BookHouse.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ namespace BookHouse.Data;
 
 public class BookHouseDbContext : IdentityDbContext<BookHouseUser>
 {
+    public DbSet<Book> Books { get; set; }
     public BookHouseDbContext(DbContextOptions<BookHouseDbContext> options)
         : base(options)
     {
